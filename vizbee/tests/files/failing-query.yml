@@ -1,0 +1,8 @@
+connections:
+    default: {DATABASE_URL}
+
+
+datasets:
+    failing:
+        query: |
+            select unknown from user;

@@ -1,0 +1,2 @@
+connections:
+    default: {DATABASE_URL}

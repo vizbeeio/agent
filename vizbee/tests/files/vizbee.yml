@@ -1,0 +1,23 @@
+connections:
+    default: {DATABASE_URL}
+
+
+datasets:
+    daily-users:
+        query: |
+            select
+                count(username),
+                date(created_at) as day
+            from user
+            group by day;
+
+        graph:
+            title: Daily user
+
+
+dashboards:
+    main-report:
+        name: Main report
+
+        datasets:
+            - daily-users
