@@ -1,5 +1,7 @@
 # vizbee agent
 
+[![build status](https://gitlab.com/vizbee/agent/badges/master/build.svg)](https://gitlab.com/vizbee/agent/pipelines)
+
 ![screencast](screencast.gif)
 
 ## Installation

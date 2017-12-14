@@ -11,8 +11,13 @@ from ..app import API_URL
 
 
 class CliTest(TestCase):
-    def setUp(self):
+    maxDiff = 1000
 
+    def setUp(self):
+        os.environ.update(dict(
+            CLIENT_ID='<client_id>',
+            CLIENT_SECRET='<client_secret>',
+        ))
         db_file = mkstemp()[1]
         db_url = f"sqlite:///{db_file}"
 
